@@ -4,8 +4,15 @@ nav {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     padding-top:20px;
     padding-bottom:20px;
+    @include mobile-only {
+        padding-top:15px;
+        padding-bottom:15px;
+    }
     img {
         height:54px;
         width:auto;
+        @include mobile-only{
+            height:44px;
+        }
     }
 }

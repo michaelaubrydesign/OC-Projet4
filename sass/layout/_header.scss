@@ -1,12 +1,15 @@
-header  {
+header {
+    background-color: white;
     .location {
-        display:flex;
+        display: flex;
         justify-content: center;
         background-color: #EAEAEA;
-        position:relative;
+        position: relative;
         padding: 15px 0px;
+
         i {
             position: absolute;
+            left: 17px;
         }
     }
 }

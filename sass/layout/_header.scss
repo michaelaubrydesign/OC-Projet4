@@ -1,0 +1,12 @@
+header  {
+    .location {
+        display:flex;
+        justify-content: center;
+        background-color: #EAEAEA;
+        position:relative;
+        padding: 15px 0px;
+        i {
+            position: absolute;
+        }
+    }
+}

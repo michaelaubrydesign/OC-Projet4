@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    padding: 25px 25px 35px 25px;
+    gap: 8px;
+
+    img {
+        height: auto;
+        width: 135px;
+        filter: invert(1);
+        margin-bottom:8px;
+    }
+
+    i {
+        margin-right: 12px;
+    }
+
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}

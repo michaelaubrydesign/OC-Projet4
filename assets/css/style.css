@@ -37,12 +37,11 @@ header .location {
   display: flex;
   justify-content: center;
   background-color: #EAEAEA;
-  position: relative;
   padding: 15px 0px;
+  position: relative;
 }
 header .location i {
   position: absolute;
-  left: 17px;
 }
 
 nav {
@@ -71,12 +70,11 @@ nav img {
 .hero {
   display: flex;
   flex-direction: column;
-  padding: 40px 0px;
   gap: 20px;
 }
 @media screen and (max-width: 767px) {
   .hero {
-    margin-right: 20px;
+    padding: 40px 20px;
   }
 }
 .hero h1 {
@@ -94,12 +92,47 @@ nav img {
 }
 
 .functioning {
-  padding: 30px 0px;
+  background-color: white;
 }
 @media screen and (max-width: 767px) {
   .functioning {
-    margin: 20px;
+    padding: 20px 20px 70px 20px;
   }
+}
+.functioning h2 {
+  margin: 30px 0px 25px 0px;
+}
+
+.steps {
+  display: flex;
+  gap: 25px;
+}
+@media screen and (max-width: 767px) {
+  .steps {
+    flex-direction: column;
+  }
+}
+.steps__card {
+  display: flex;
+  align-items: center;
+  background-color: #F7F7F7;
+  padding: 28px 38px;
+  border-radius: 20px;
+  position: relative;
+}
+.steps__card span {
+  color: white;
+  background-color: #9356DC;
+  padding: 4px 9px;
+  border-radius: 15px;
+  position: absolute;
+  left: -12px;
+  font-size: 14px;
+}
+.steps__card i {
+  margin-right: 20px;
+  color: #7E7E7E;
+  font-size: 18px;
 }
 
 button {

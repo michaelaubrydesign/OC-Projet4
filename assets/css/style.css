@@ -18,11 +18,7 @@ body {
 h1 {
   font-size: 40px;
   font-weight: 700;
-}
-@media screen and (max-width: 767px) {
-  h1 {
-    font-size: 24px;
-  }
+  font-size: 24px;
 }
 
 h2 {
@@ -52,27 +48,18 @@ header .location i {
 
 nav {
   display: flex;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
-  z-index: 1;
-}
-@media screen and (max-width: 767px) {
-  nav {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 nav img {
   height: 54px;
   width: auto;
   margin: auto;
-}
-@media screen and (max-width: 767px) {
-  nav img {
-    height: 44px;
-  }
+  height: 44px;
 }
 
 footer {
@@ -100,11 +87,7 @@ footer a {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-@media screen and (max-width: 767px) {
-  .hero {
-    padding: 40px 20px;
-  }
+  padding: 40px 20px;
 }
 .hero h1 {
   text-align: center;
@@ -123,11 +106,7 @@ footer a {
 
 .functioning {
   background-color: white;
-}
-@media screen and (max-width: 767px) {
-  .functioning {
-    padding: 20px 20px 70px 20px;
-  }
+  padding: 20px 20px 70px 20px;
 }
 .functioning h2 {
   margin: 30px 0px 25px 0px;
@@ -137,11 +116,7 @@ footer a {
   display: flex;
   gap: 25px;
   margin-left: 12px;
-}
-@media screen and (max-width: 767px) {
-  .steps {
-    flex-direction: column;
-  }
+  flex-direction: column;
 }
 .steps__card {
   display: flex;
@@ -171,11 +146,7 @@ footer a {
   flex-direction: column;
   margin-top: 30px;
   gap: 20px;
-}
-@media screen and (max-width: 767px) {
-  .restaurants {
-    padding: 20px 20px 70px 20px;
-  }
+  padding: 20px 20px 70px 20px;
 }
 .restaurants__card {
   background-color: #FFF;

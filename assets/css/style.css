@@ -44,18 +44,19 @@ header .location {
   justify-content: center;
   background-color: #EAEAEA;
   padding: 15px 0px;
-  position: relative;
 }
 header .location i {
-  position: absolute;
+  position: relative;
+  right: 20px;
 }
 
 nav {
   display: flex;
-  justify-content: space-around;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
 }
 @media screen and (max-width: 767px) {
   nav {
@@ -66,6 +67,7 @@ nav {
 nav img {
   height: 54px;
   width: auto;
+  margin: auto;
 }
 @media screen and (max-width: 767px) {
   nav img {
@@ -84,7 +86,7 @@ footer img {
   height: auto;
   width: 135px;
   filter: invert(1);
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 footer i {
   margin-right: 12px;
@@ -109,13 +111,14 @@ footer a {
 }
 .hero p {
   text-align: center;
-  line-height: 2;
+  line-height: 1.2;
   font-size: 18px;
   font-weight: 300;
   color: #353535;
 }
 .hero button {
   margin: auto;
+  border-style: none;
 }
 
 .functioning {
@@ -133,6 +136,7 @@ footer a {
 .steps {
   display: flex;
   gap: 25px;
+  margin-left: 12px;
 }
 @media screen and (max-width: 767px) {
   .steps {
@@ -178,19 +182,41 @@ footer a {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   width: auto;
+  position: relative;
 }
 .restaurants__card img {
   width: 100%;
-  height: 235px;
+  height: 180px;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
+.restaurants__card span {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  padding: 8px 10px;
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 14px;
+  border-radius: 2px;
+}
 .restaurants__card__content {
+  display: flex;
   padding: 5px 25px 15px 15px;
 }
-.restaurants__card__content p {
+.restaurants__card__content--left {
+  flex: 90%;
+}
+.restaurants__card__content--left p {
   font-size: 17px;
   font-weight: 300;
+}
+.restaurants__card__content--right {
+  display: flex;
+  flex: 10%;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 24px;
 }
 
 button {

@@ -118,6 +118,13 @@ footer a {
   margin-left: 12px;
   flex-direction: column;
 }
+.steps a {
+  text-decoration: none;
+  color: #000000;
+}
+.steps a:hover i {
+  color: #9356DC;
+}
 .steps__card {
   display: flex;
   align-items: center;
@@ -147,6 +154,10 @@ footer a {
   margin-top: 30px;
   gap: 20px;
   padding: 20px 20px 70px 20px;
+}
+.restaurants a {
+  text-decoration: none;
+  color: #000000;
 }
 .restaurants__card {
   background-color: #FFF;

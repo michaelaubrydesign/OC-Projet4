@@ -224,7 +224,7 @@ nav img {
 .restaurants {
   gap: 20px;
   padding: 20px 20px 70px 20px;
-  max-width: 1045px;
+  max-width: 1080px;
   margin: auto;
 }
 .restaurants h2 {
@@ -239,6 +239,7 @@ nav img {
   .restaurants__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
+    gap: 50px 100px;
   }
 }
 .restaurants__content a {

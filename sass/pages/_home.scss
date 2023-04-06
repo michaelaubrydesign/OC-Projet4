@@ -166,6 +166,30 @@
                     justify-content: flex-end;
                     align-items: center;
                     font-size: 24px;
+
+                    i {
+                        position: relative;
+                        z-index: 1;
+
+                        &:hover {
+                            &::after {
+                                opacity: 1;
+                            }
+                        }
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+                            opacity: 0;
+                            z-index: -1;
+                            transition: opacity 250ms;
+                        }
+                    }
                 }
             }
         }

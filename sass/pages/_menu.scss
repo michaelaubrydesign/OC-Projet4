@@ -2,11 +2,13 @@
     z-index: -1;
     height: 275px;
     overflow: hidden;
+    position:relative;
 
     img {
-        width: 100%;
+        transform-origin: center;
+        width:100%;
         object-fit: cover;
-        background-position: center;
+        max-height:275px;
     }
 }
 

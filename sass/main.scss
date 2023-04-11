@@ -1,10 +1,15 @@
 @import "./utils/mixins";
 @import "./utils/maps";
 @import "./utils/variables";
+
 @import "./base/base";
 @import "./base/typography";
+
 @import "./layout/header";
 @import "./layout/nav";
 @import "./layout/footer";
+
 @import "./pages/home";
+@import "./pages/menu";
+
 @import "./components/buttons";

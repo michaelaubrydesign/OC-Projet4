@@ -1,14 +1,19 @@
 nav {
     display: flex;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    padding-top: 20px;
-    padding-bottom: 20px;
     position: relative;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    align-items: center;
+    padding: 24px;
+
+    i {
+        font-size: 24px;
+    }
+
+    a:visited i {
+        color:#000;
+    }
 
     img {
-        height: 54px;
         width: auto;
         margin: auto;
         height: 44px;

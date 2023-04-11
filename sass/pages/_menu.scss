@@ -2,18 +2,18 @@
     z-index: -1;
     height: 275px;
     overflow: hidden;
-    position:relative;
+    position: relative;
 
     img {
         transform-origin: center;
-        width:100%;
+        width: 100%;
         object-fit: cover;
-        max-height:275px;
+        max-height: 275px;
     }
 }
 
 .menu {
-    display:flex;
+    display: flex;
     flex-direction: column;
     background-color: #f1f1f1;
     padding: 30px 20px 30px 20px;
@@ -25,8 +25,8 @@
     @include desktop-only {
         max-width: 1055px;
         margin: auto;
-        padding-left:210px;
-        padding-right:210px;
+        padding-left: 210px;
+        padding-right: 210px;
     }
 
     &__head {
@@ -37,8 +37,8 @@
         margin-bottom: 20px;
 
         @include desktop-only {
-            justify-content:center;
-            gap:25px;
+            justify-content: center;
+            gap: 25px;
         }
 
         i {
@@ -48,9 +48,9 @@
     }
 
     &__list {
-        display:flex;
+        display: flex;
         flex-direction: column;
-        gap:12px;
+        gap: 12px;
         margin-bottom: 40px;
 
         &__card {
@@ -58,6 +58,11 @@
             box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
             padding: 12px 15px;
+
+            &:hover {
+                transform: translateX(-40px);
+                transition: transform 300ms;
+            }
 
             &__title {
                 margin-bottom: 5px;
@@ -77,9 +82,9 @@
     }
 
     button {
-        padding-left:50px;
-        padding-right:50px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
-    
+
 }

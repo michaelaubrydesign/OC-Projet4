@@ -36,6 +36,31 @@ h3 {
   line-height: 2;
 }
 
+button {
+  font-size: 16px;
+}
+
+h4 {
+  font-family: "Shrikhand";
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 13px;
+}
+h5::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  background-color: #99E2D0;
+  width: 35px;
+  height: 3px;
+}
+
 header {
   background-color: white;
 }
@@ -53,14 +78,17 @@ header .location i {
 nav {
   display: flex;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-  padding-top: 20px;
-  padding-bottom: 20px;
   position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  align-items: center;
+  padding: 24px;
+}
+nav i {
+  font-size: 24px;
+}
+nav a:visited i {
+  color: #000;
 }
 nav img {
-  height: 54px;
   width: auto;
   margin: auto;
   height: 44px;
@@ -149,10 +177,6 @@ nav img {
   font-weight: 300;
   color: #353535;
 }
-.hero button {
-  margin: auto;
-  border-style: none;
-}
 
 .functioning__bg {
   background-color: white;
@@ -188,15 +212,15 @@ nav img {
 .steps a {
   text-decoration: none;
   color: #000000;
-}
-@media screen and (min-width: 767px) {
-  .steps a {
-    flex-basis: 0;
-    flex-grow: 1;
-  }
-}
-.steps a:hover i {
-  color: #9356DC;
+  /*@include desktop-only {
+      flex-basis: 0;
+      flex-grow: 1;
+  }*/
+  /*&:hover {
+      &i::after {
+          opacity:1;
+      }
+  }*/
 }
 .steps__card {
   display: flex;
@@ -287,15 +311,116 @@ nav img {
   align-items: center;
   font-size: 24px;
 }
+.restaurants__content__card__content--right i {
+  position: relative;
+  z-index: 1;
+}
+.restaurants__content__card__content--right i:hover::after {
+  opacity: 1;
+}
+.restaurants__content__card__content--right i::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+}
+
+.preview {
+  z-index: -1;
+  height: 275px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -30px;
+}
+.preview img {
+  transform-origin: center;
+  width: 100%;
+  object-fit: cover;
+  max-height: 275px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  padding: 30px 20px 40px 20px;
+  border-radius: 30px 30px 0px 0px;
+  justify-content: center;
+}
+@media screen and (min-width: 767px) {
+  .menu {
+    max-width: 1055px;
+    margin: auto;
+    padding-left: 210px;
+    padding-right: 210px;
+  }
+}
+.menu__head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 767px) {
+  .menu__head {
+    justify-content: center;
+    gap: 25px;
+  }
+}
+.menu__head i {
+  font-size: 24px;
+  margin-right: 20px;
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+.menu__list__card {
+  background-color: #fff;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 12px 15px;
+}
+.menu__list__card:hover {
+  transform: translateX(-40px);
+  transition: transform 300ms;
+}
+.menu__list__card__title {
+  margin-bottom: 5px;
+}
+.menu__list__card__details {
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__list__card__details span {
+  font-weight: 700;
+}
+.menu button {
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
 button {
-  padding: 13px 18px;
+  padding: 16px 22px;
   border-radius: 25px;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 1;
+  margin: auto;
+  border-style: none;
 }
 button:hover::after {
   opacity: 1;

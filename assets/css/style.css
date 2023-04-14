@@ -324,6 +324,7 @@ nav img {
   opacity: 0;
   z-index: -1;
   transition: opacity 250ms;
+  object-fit: cover;
 }
 
 .loader {

@@ -165,6 +165,8 @@
                         &:hover {
                             &::after {
                                 opacity: 1;
+                                transform: scaleY(1);
+                                transform-origin: center bottom;
                             }
                         }
 
@@ -177,9 +179,9 @@
                             left: 0;
                             background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
                             opacity: 0;
+                            transform: scaleY(0);
                             z-index: -1;
-                            transition: opacity 250ms;
-                            object-fit: cover;
+                            transition: all 2500ms;
                         }
                     }
                 }
@@ -201,7 +203,7 @@
     justify-content: center;
     align-items: center;
     animation-duration: 400ms;
-    animation-delay: 2200ms;
+    animation-delay: 1200ms;
     animation-fill-mode: forwards;
     animation-name: fadeOut;
 }

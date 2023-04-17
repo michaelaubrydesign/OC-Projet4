@@ -322,28 +322,37 @@ nav img {
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
       opacity: 0;
   }*/
-}
-.restaurants__content__card__content--right i {
-  z-index: 1;
-  position: relative;
-}
-.restaurants__content__card__content--right i:hover::after {
-  transform: scaleY(1);
-}
-.restaurants__content__card__content--right i::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-  transform: scaleY(0);
-  z-index: -1;
-  transition: all 2500ms;
-  transform-origin: bottom;
-}
+  /*i {
+      z-index: 1;
+      position: relative;
 
+      &:hover {
+          &::before {
+              transform: scaleY(1);
+          }
+      }
+
+      &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+          transform: scaleY(0);
+          z-index: -1;
+          transition: all 2500ms;
+          transform-origin: bottom;
+      }
+  }*/
+}
+.restaurants__content__card__content--right__like {
+  position: absolute;
+  height: 26px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background-clip: border-box;
+}
 .loader {
   position: fixed;
   top: 0;

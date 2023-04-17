@@ -305,15 +305,30 @@ nav img {
   justify-content: flex-end;
   align-items: center;
   font-size: 24px;
+  position: relative;
+  /*&:hover {
+      &::after {
+          opacity: 1;
+      }
+  }
+
+  &::after {
+      content:"";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+      opacity: 0;
+  }*/
 }
 .restaurants__content__card__content--right i {
-  position: relative;
   z-index: 1;
+  position: relative;
 }
 .restaurants__content__card__content--right i:hover::after {
-  opacity: 1;
   transform: scaleY(1);
-  transform-origin: center bottom;
 }
 .restaurants__content__card__content--right i::after {
   content: "";
@@ -323,10 +338,10 @@ nav img {
   right: 0;
   left: 0;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-  opacity: 0;
   transform: scaleY(0);
   z-index: -1;
   transition: all 2500ms;
+  transform-origin: bottom;
 }
 
 .loader {

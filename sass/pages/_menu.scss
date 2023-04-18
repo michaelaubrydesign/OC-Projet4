@@ -3,7 +3,7 @@
     height: 275px;
     overflow: hidden;
     position: relative;
-    margin-bottom:-30px;
+    margin-bottom: -30px;
 
     img {
         transform-origin: center;
@@ -51,17 +51,66 @@
         flex-direction: column;
         gap: 12px;
         margin-bottom: 40px;
+        opacity: 0;
+        animation: appear 500ms ease-in-out forwards;
+
+        &:nth-child(3) {
+            animation-delay: 500ms;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 1000ms;
+        }
+
+        &:nth-child(1) {
+            animation-delay: 1500ms;
+        }
+
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
 
         &__card {
             background-color: #fff;
             box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
             padding: 12px 15px;
+            position: relative;
+            overflow: hidden;
 
             &:hover {
-                transform: translateX(-40px);
-                transition: transform 300ms;
+                &::after, span {
+                    transform: translateX(-60px);
+                }
             }
+
+            &::after {
+                font-family: "Font Awesome 5 Free";
+                content: "\f058";
+                position: absolute;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font: var(--fa-font-solid);
+                font-size: 22px;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 100%;
+                width: 60px;
+                border-radius: 0 15px 15px 0;
+                background-color: $tertiary-color;
+                transition: all 500ms;
+            }
+
 
             &__title {
                 margin-bottom: 5px;
@@ -75,6 +124,7 @@
 
                 span {
                     font-weight: 700;
+                    transition: all 500ms;
                 }
             }
         }

@@ -158,126 +158,29 @@
                     align-items: center;
                     font-size: 24px;
 
-                    .fa-regular{
-                        position:absolute;
-                        opacity:1;
+                    .fa-regular {
+                        position: absolute;
+                        opacity: 1;
                         color: black;
+
                         &:hover {
-                            opacity:0;
+                            opacity: 0;
                         }
                     }
-                     i {
+
+                    .fa-solid {
                         opacity: 0;
                         z-index: 1;
                         background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
                         -webkit-background-clip: text;
                         color: transparent;
+                        transition: all 500ms;
 
                         &:hover {
-                            opacity: 1;
-                        }
-
-                        &::before {
-                            font-family: "Font Awesome 5 Free";
-                            content: "\f004";
-                        }
-
-
-                        /*&:hover {
-                                &::after {
-                                    //transform: scaleY(1);
-                                }
-                            }
-    
-                            &::after {
-                                content: "";
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                right: 0;
-                                left: 0;
-                                //transform: scaleY(0);
-                                z-index: -1;
-                                //transition: all 2500ms;
-                                //transform-origin: bottom;
-                            }*/
-                    }
-                }
-
-
-                /*i {
-                        z-index: 1;
-                        position: relative;
-
-                        &:hover {
-                            &::after {
-                                transform: scaleY(1);
-                            }
-                        }
-
-                        &::after {
-                            content: "\f004";
-                            font-family: "Font Awesome 5 Free";
-                            font: var(--fa-font-solid);
-                            position: absolute;
-                            top: 0;
-                            bottom: 0;
-                            right: 0;
-                            left: 0;
-                            background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-                            background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            transform: scaleY(0);
-                            z-index: -1;
-                            transition: all 2500ms;
-                            transform-origin: bottom;
-                        }
-                    }*/
-
-
-
-                /*&:hover {
-                        &::after {
                             opacity: 1;
                         }
                     }
-
-                    &::after {
-                        content:"";
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        right: 0;
-                        left: 0;
-                        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-                        opacity: 0;
-                    }*/
-
-                /*i {
-                        z-index: 1;
-                        position: relative;
-
-                        &:hover {
-                            &::before {
-                                transform: scaleY(1);
-                            }
-                        }
-
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            top: 0;
-                            bottom: 0;
-                            right: 0;
-                            left: 0;
-                            background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-                            transform: scaleY(0);
-                            z-index: -1;
-                            transition: all 2500ms;
-                            transform-origin: bottom;
-                        }
-                    }*/
-
+                }
             }
         }
     }

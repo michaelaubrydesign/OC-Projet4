@@ -291,74 +291,6 @@ nav img {
 .restaurants__content__card__content {
   display: flex;
   padding: 5px 25px 15px 15px;
-  /*i {
-          z-index: 1;
-          position: relative;
-
-          &:hover {
-              &::after {
-                  transform: scaleY(1);
-              }
-          }
-
-          &::after {
-              content: "\f004";
-              font-family: "Font Awesome 5 Free";
-              font: var(--fa-font-solid);
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              right: 0;
-              left: 0;
-              background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-              background-clip: text;
-              -webkit-text-fill-color: transparent;
-              transform: scaleY(0);
-              z-index: -1;
-              transition: all 2500ms;
-              transform-origin: bottom;
-          }
-      }*/
-  /*&:hover {
-          &::after {
-              opacity: 1;
-          }
-      }
-
-      &::after {
-          content:"";
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-          opacity: 0;
-      }*/
-  /*i {
-          z-index: 1;
-          position: relative;
-
-          &:hover {
-              &::before {
-                  transform: scaleY(1);
-              }
-          }
-
-          &::before {
-              content: "";
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              right: 0;
-              left: 0;
-              background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-              transform: scaleY(0);
-              z-index: -1;
-              transition: all 2500ms;
-              transform-origin: bottom;
-          }
-      }*/
 }
 .restaurants__content__card__content--left {
   flex: 90%;
@@ -382,37 +314,16 @@ nav img {
 .restaurants__content__card__content--right .fa-regular:hover {
   opacity: 0;
 }
-.restaurants__content__card__content--right i {
+.restaurants__content__card__content--right .fa-solid {
   opacity: 0;
   z-index: 1;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   -webkit-background-clip: text;
   color: transparent;
-  /*&:hover {
-          &::after {
-              //transform: scaleY(1);
-          }
-      }
-
-      &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          //transform: scaleY(0);
-          z-index: -1;
-          //transition: all 2500ms;
-          //transform-origin: bottom;
-      }*/
+  transition: all 500ms;
 }
-.restaurants__content__card__content--right i:hover {
+.restaurants__content__card__content--right .fa-solid:hover {
   opacity: 1;
-}
-.restaurants__content__card__content--right i::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f004";
 }
 
 .loader {
@@ -564,19 +475,16 @@ nav img {
   animation-name: appear;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  /*animation: appear 1000ms ease-in-out forwards;*/
+  animation-duration: 500ms;
 }
 .menu .menu__list:nth-child(2) {
   animation-delay: 1000ms;
-  background: blue;
 }
 .menu .menu__list:nth-child(3) {
   animation-delay: 2000ms;
-  background: red;
 }
 .menu .menu__list:nth-child(4) {
   animation-delay: 3000ms;
-  background: green;
 }
 @keyframes appear {
   from {

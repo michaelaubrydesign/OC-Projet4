@@ -462,9 +462,32 @@ nav img {
     gap: 25px;
   }
 }
-.menu__head i {
+.menu__head__like {
+  display: flex;
+  align-items: center;
   font-size: 24px;
   margin-right: 20px;
+}
+.menu__head__like .fa-regular {
+  position: absolute;
+  opacity: 1;
+  color: black;
+  z-index: 0;
+}
+.menu__head__like .fa-regular:hover {
+  opacity: 0;
+}
+.menu__head__like .fa-solid {
+  opacity: 0;
+  z-index: 1;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 500ms;
+  animation-fill-mode: forwards;
+}
+.menu__head__like .fa-solid:hover {
+  opacity: 1;
 }
 .menu .menu__list {
   display: flex;

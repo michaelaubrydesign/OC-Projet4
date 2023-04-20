@@ -40,12 +40,37 @@
             gap: 25px;
         }
 
-        i {
+        &__like {
+            display: flex;
+            align-items: center;
             font-size: 24px;
             margin-right: 20px;
-        }
 
-        
+            .fa-regular {
+                position: absolute;
+                opacity: 1;
+                color: black;
+                z-index: 0;
+
+                &:hover {
+                    opacity: 0;
+                }
+            }
+
+            .fa-solid {
+                opacity: 0;
+                z-index: 1;
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+                -webkit-background-clip: text;
+                color: transparent;
+                transition: all 500ms;
+                animation-fill-mode: forwards;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
     }
 
     .menu__list {
@@ -91,6 +116,7 @@
             overflow: hidden;
 
             &:hover {
+
                 &::after,
                 span {
                     transform: translateX(-60px);
@@ -140,6 +166,4 @@
         padding-left: 50px;
         padding-right: 50px;
     }
-
-
 }

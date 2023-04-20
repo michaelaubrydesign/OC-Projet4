@@ -64,7 +64,6 @@
                 -webkit-background-clip: text;
                 color: transparent;
                 transition: all 500ms;
-                animation-fill-mode: forwards;
 
                 &:hover {
                     opacity: 1;
@@ -114,6 +113,8 @@
             padding: 12px 15px;
             position: relative;
             overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
 
             &:hover {
 
@@ -146,6 +147,9 @@
 
             &__title {
                 margin-bottom: 5px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
             }
 
             &__details {
@@ -153,6 +157,13 @@
                 font-weight: 300;
                 display: flex;
                 justify-content: space-between;
+                overflow: hidden;
+
+                p {
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
 
                 span {
                     font-weight: 700;

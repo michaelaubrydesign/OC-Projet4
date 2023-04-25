@@ -222,6 +222,9 @@ nav img {
   border-radius: 20px;
   position: relative;
 }
+.steps__card:hover {
+  background-color: #e9ddf8;
+}
 .steps__card span {
   color: white;
   background-color: #9356DC;

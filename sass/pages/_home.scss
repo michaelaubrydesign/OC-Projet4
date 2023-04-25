@@ -63,6 +63,10 @@
         border-radius: 20px;
         position: relative;
 
+        &:hover {
+            background-color: #e9ddf8;
+        }
+
 
         span {
             color: white;
